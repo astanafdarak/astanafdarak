@@ -280,8 +280,14 @@ footer .text-body {
 .condition-list li:last-child {
   border-bottom: none; /* إزالة الخط الأسفل من النقطة الأخيرة */
 }
-
-
+footer { 
+  height: 17rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
 
 @media(max-width:768px) {
   .appDownload {
@@ -325,5 +331,8 @@ footer .text-body {
 footer img {
   height: 5rem;
   width: 5rem;
+}
+footer { 
+  height: 30rem;
 }
 }
