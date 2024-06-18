@@ -1,0 +1,329 @@
+
+:root {
+    --mainColor : #000
+}
+*{
+  font-family: 'cairo', sans-serif;
+}
+body {
+  background-color: white;
+}
+.navbar .container .navbar-brand{
+    color: var(--mainColor);
+    font-size: 2rem;
+    font-weight: 700;
+}
+#navbarNav {
+  margin-left: 3rem;
+}
+.navbar-nav li a {
+    color: black; /* Default link color */
+    position: relative; /* Needed for pseudo-element positioning */
+    text-decoration: none;
+    font-size: 1.4rem; /* Remove underline */
+  }
+  .navbar-nav li a:hover {
+    color: var(--mainColor);
+  
+  }
+  /* Navbar link underline pseudo-element */
+  .navbar-nav li a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position relative to the link */
+    bottom: 0; /* Align to the bottom of the link */
+    left: 0; /* Align to the left edge of the link */
+    width: 0; /* Initially, no width */
+    height: 2px; /* Height of the underline */
+    background-color: var(--mainColor); /* Color of the underline */
+    transition: width 0.3s ease; /* Animate the width change */
+  }
+  .appDownload {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  /* Navbar link hover styles */
+  .navbar-nav li a:hover::after {
+    width: 100%; /* Expand the width to 100% on hover */
+  }
+  .logo-container img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+  }
+  .button-container {
+    display: 
+    flex;
+    flex-direction: column;
+  }
+  .button-container .button i {
+    color:white;
+  }
+  .phoneImage-container {
+    margin-top: 3rem;
+  }
+  .phoneImage-container img{
+    height: 30rem;
+    border-radius: 2rem;
+  }
+  .button-container .button{
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--mainColor);
+    border-radius: 3rem;
+    width: 22rem;
+    height: 4.3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .button-container .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  .button-container .button  p , a{
+  color: white;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.button-container .button  svg {
+  color: white;
+}
+.title2 {
+  color: var(--mainColor);
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+.instructions-container {
+  display: flex;
+  justify-content: center;
+
+}
+.instructions {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+.instructions .instructions-part-1 {
+  display: flex;
+  align-items: center;
+}
+.instructions .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-emphasis: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  color: white;
+}
+
+/*here starts the Service clientèle design*/
+.contact-container  { 
+  background-color: black;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.contact-us .title{
+  color: var(--mainColor);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.contact-us .row svg {
+  width: 2rem;
+  height: 2rem;
+}
+.contact-us .contact-container .row{
+  color: white;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-us .contact-img img {
+  width: 40rem;
+  height: 25rem;
+}
+
+section {
+  margin-top: 7rem;
+}
+
+
+
+
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .title {
+  color: var(--mainColor);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about img {
+  width: 28rem;
+  height: 28rem;
+}
+.about .about-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: black;
+  opacity: 0.6;
+}
+footer {
+  background-color: var(--mainColor);
+  color: white;
+}
+footer img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+footer li a{
+  color: white;
+}
+footer  ul {
+  list-style-type :none;
+}
+footer  ul a  {
+text-decoration: underline;
+color: white;
+}
+footer .list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+footer .facebook-icon {
+
+  font-size: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #3b5998, #1877f2);
+}
+footer .instagram-icon{
+  font-size: 2.5rem;
+}
+footer .facebook-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(45deg, #3b5998, #1877f2);
+  border-radius: 50%;
+}
+footer .email-icon {
+  font-size: 2.5rem;
+}
+footer .instagram-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  
+border-radius: 50%;
+}
+footer .email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+}
+footer .text-body {
+  color: rgb(1, 76, 151) !important;
+}
+
+
+
+.condition-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold; /* جعل العنوان أكثر وضوحاً */
+  color: #333; /* إضافة لون للعنوان */
+}
+.condition-list {
+  list-style-type: decimal; /* إضافة أرقام لعناصر القائمة */
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.condition-list li {
+  margin-bottom: 10px;
+  padding-left: 20px; /* إضافة مساحة بين النقاط */
+  border-bottom: 1px solid #ccc; /* إضافة خط أسفل كل نقطة */
+}
+.condition-list li:last-child {
+  border-bottom: none; /* إزالة الخط الأسفل من النقطة الأخيرة */
+}
+
+
+
+@media(max-width:768px) {
+  .appDownload {
+  
+    flex-direction: column;
+  }
+  .instructions-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-us .container {
+    flex-direction: column;
+  }
+  .contact-us .contact-img img {
+    height: 25rem;
+    width:22rem;
+  }
+  .contact-us .contact-container .row h3{
+    font-size: 1.3rem;
+  }
+  .about .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about img {
+    width: 20rem;
+    height: 22rem;
+  }
+  .contact-container{
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.6rem;
+  }
+  .navbar .container .navbar-brand{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+footer img {
+  height: 5rem;
+  width: 5rem;
+}
+}

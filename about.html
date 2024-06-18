@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تخزين البيانات والأمن</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="logo-container d-flex justify-content-center">
+        <img src="assets/3.png" alt="" class="img-fluid">
+      </div>
+      <a class="navbar-brand" href="#" style="display: flex; justify-content: start;">أستنا ف دارك</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">اتصل بنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about-id">معلومات عنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container2">
+        <h1>تخزين البيانات والأمن</h1>
+        <section id="types-of-data">
+            <h2>1. أنواع البيانات التي يتم جمعها</h2>
+            <ul>
+                <li><strong>الأسماء</strong>: تستخدم لتحديد عمال متجر الحلاقة.</li>
+                <li><strong>عناوين البريد الإلكتروني</strong>: تستخدم لتحقيق المصادقة وإنشاء حساب.</li>
+                <li><strong>بيانات الموقع</strong>: تستخدم لمساعدة العملاء على العثور على متاجر الحلاقة القريبة.</li>
+                <li><strong>وصول إلى المعرض</strong>: قد يطلب التطبيق الوصول إلى معرض الجهاز لتمكين عمال متجر الحلاقة من تحميل صور متاجرهم. هذا ضروري لتحسين تجربة المستخدم وعرض الخدمات التي تقدمها متاجر الحلاقة.</li>
+            </ul>
+        </section>
+        <section id="purpose-of-data">
+            <h2>2. غرض جمع البيانات</h2>
+            <ul>
+                <li>تحديد عمال متجر الحلاقة</li>
+                <li>تحقيق المصادقة وإنشاء حساب</li>
+                <li>خدمات الموقع القائم على الموقع للعملاء</li>
+                <li>وصول إلى المعرض لتحميل الصور</li>
+            </ul>
+        </section>
+        <section id="methods-of-collection">
+            <h2>3. طرق جمع البيانات</h2>
+            <ul>
+                <li>مدخلات المستخدم</li>
+                <li>تحديد موقع الأجهزة النقالة</li>
+            </ul>
+        </section>
+        <section id="third-party-access">
+            <h2>4. الوصول إلى الأطراف الثالثة</h2>
+            <p>لا يشارك التطبيق بيانات المستخدم مع الأطراف الثالثة.</p>
+        </section>
+        <section id="data-storage-security">
+            <h2>5. تخزين البيانات والأمن</h2>
+            <p>تخزين بيانات المستخدم بشكل آمن على خوادم Firebase، والتي توفر حلول تخزين بيانات قوية تتوافق مع المعايير الصناعية.</p>
+            <ul>
+                <li>مراقبة الوصول</li>
+                <li>فحوصات أمنية منتظمة</li>
+            </ul>
+            <p>يتمتع المستخدمون بقدرة تحديث أو حذف بياناتهم عن طريق تسجيل الدخول إلى حساباتهم ووصول إلى صفحات تحديث المعلومات. ومع ذلك، لا يوجد أي طريقة لتحويل أو تخزين البيانات عبر الإنترنت أو الإلكترونية بنسبة 100%.</p>
+        </section>
+        <section id="policy-updates">
+            <h2>6. تحديثات السياسة</h2>
+            <p>نحتفظ بالحق في تغيير سياسة الخصوصية في أي وقت. سيتم إعلام المستخدمين بأي تغييرات عبر البريد الإلكتروني.</p>
+        </section>
+        <section id="account-deletion">
+            <h2>7. عملية حذف الحساب</h2>
+            <p>يمكن للمستخدمين بدء عملية حذف الحساب من خلال إعدادات التطبيق. عن طريق زيارة صفحة الإعدادات واختيار خيار إعدادات الحساب، يتم توجيه المستخدمين إلى صفحة أخرى حيث يمكنهم العثور على زر حذف الحساب. عند تأكيد طلب الحذف، يتم إرساله وتخزينه في مجموعة Firestore. تظل الطلبات مخزنة حتى يتم التحقق منها والقبول من قبل الإداري.</p>
+        </section>
+        <section id="contact-info">
+            <h2>8. معلومات الاتصال</h2>
+            <ul>
+                <li>اتصال هاتفي</li>
+                <li>إرسال رسائل بريد إلكتروني</li>
+                <li>مراسلة عبر واتس اب</li>
+            </ul>
+            <p>تتوفر روابط معلومات الاتصال في صفحات إعدادات التطبيق.</p>
+        </section>
+    </div>
+
+
+    <section class="">
+      <!-- Footer -->
+      <footer class="text-center text-md-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+         
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <div class="container d-flex flex-row align-items-center mb-4 justify-content-start">
+                <img class="image ms-3" src="assets/3.png" alt="">
+                <h5 class="text-uppercase ms-3">أستنا ف دارك</h5>
+              </div>
+            </div>
+            <div class="list-container col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+    
+              <ul class="list">
+                <li>
+                  
+                  <a href="index.html#about-id" >حول أستنا ف دارك</a>
+                </li>
+                <li>
+                 
+                  <a href="about.html" >سياسة الخصوصية</a>
+                </li>
+              
+                </li>
+              </ul>
+            </div>
+            <div class="list-container col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+    
+              <ul class="list">
+              
+                <li>
+                  <a href="generalConditions.html" >شروط عامة</a>
+                </li>
+                <li>
+                  <a href="deleteAccount.html" >حذف الحساب</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+           
+          </div>
+          <div class="icons container d-flex justify-content-center">
+            <div class="facebook-container me-3">
+              <i class="facebook-icon fa-brands fa-facebook "></i>
+            </div>
+            <div class="instagram-container me-3">
+              <i class="instagram-icon fa-brands fa-instagram "></i>        </div>
+            <div class="email-container me-3">
+              <i class="email-icon fa-regular fa-envelope "></i>        </div>
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center">
+          © 2024 Copyright:
+          <a class="text-body">أستنا ف دارك</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>

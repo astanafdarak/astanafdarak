@@ -1,0 +1,45 @@
+body {
+    font-family: "cairo", sans-serif;
+   
+    direction: rtl; /* added for Arabic text */
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#types-of-data, #purpose-of-data, #methods-of-collection, #third-party-access, #data-storage-security, #policy-updates, #account-deletion, #contact-info {
+    margin-bottom: 40px;
+}
