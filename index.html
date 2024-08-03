@@ -12,6 +12,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+<style>
+  @keyframes slideInLeft {
+      0% {
+          transform: translateX(-100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  @keyframes slideInRight {
+      0% {
+          transform: translateX(100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  /* Apply the animations */
+  .animated-image {
+      animation: slideInLeft 0.5s ease forwards;
+  }
+
+  .animated-text {
+      animation: slideInRight 0.5s ease forwards;
+  }
+
+  .button-container {
+      animation-delay: 0.3s; /* Optional: delay the button animation */
+  }
+
+  .animated-button {
+      opacity: 0; /* Start hidden */
+      animation: slideInRight 0.5s ease forwards;
+  }
+
+  .animated-button:nth-child(1) {
+      animation-delay: 0.5s; /* First button delay */
+  }
+
+  .animated-button:nth-child(2) {
+      animation-delay: 0.6s; /* Second button delay */
+  }
+</style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -40,33 +89,31 @@
           
         </div>
       </nav>
-      <div class="container appDownload mb-5 ">
-      
-        <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center flex-column">
+      <div class="container appDownload mb-5">
+        <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center flex-column animated-text">
           <div class="title text-center mb-4">
             <h3>
               مع تطبيقنا، لا مزيد من الانتظار، فقط انقر وتعال في الوقت المحدد
             </h3>
           </div>
           <div class="button-container">
-            <div class="button d-flex justify-content-spacebetween">
+            <div class="button d-flex justify-content-spacebetween animated-button">
               <i class="fa-brands fa-google-play fa-2x"></i>
-              <p >حمل التطبيق </p>
-              <p >GooglePlay</p>
-           
+              <p>حمل التطبيق</p>
+              <p>GooglePlay</p>
             </div>
-            <div class="button d-flex justify-content-spacebetween">
+            <div class="button d-flex justify-content-spacebetween animated-button">
               <i class="fa-brands fa-app-store-ios fa-2x"></i>
-              <p >تجده ايضا على</p>
-              <p >AppStore</p>
+              <p>تجده ايضا على</p>
+              <p>AppStore</p>
             </div>
           </div>
-            
         </div>
-        <div class="phoneImage-container col-12 col-sm-6 d-flex justify-content-center">
-            <img src="assets/phone2.svg" alt="">
-          </div>
+        <div class="phoneImage-container col-12 col-sm-6 d-flex justify-content-center animated-image">
+          <img src="assets/phone2.svg" alt="">
+        </div>
       </div>
+      
       <section class="container how-to-start">
         <h3 class="title2 text-center mb-5 w-100">كيف تبدأ</h3>
         <div class="row instructions-container">
